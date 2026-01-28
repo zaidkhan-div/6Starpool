@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Star Pools - Pool n Spa Care</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo-icon">
+                <img src="./assets/white-logo.png" alt="">
+            </div>
+
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="#home" class="navbar-link active">Home</a></li>
+                <li class="navbar-item"><a href="#about" class="navbar-link">About Us</a></li>
+                <li class="navbar-item"><a href="#services" class="navbar-link">Services</a></li>
+                <li class="navbar-item"><a href="#gallery" class="navbar-link">Gallery</a></li>
+                <li class="navbar-item"><a href="#blogs" class="navbar-link">Blogs</a></li>
+                <li class="navbar-item"><a href="#contact" class="navbar-link">Contact Us</a></li>
+            </ul>
+
+            <button class="navbar-cta">REQUEST A QUOTE</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero-section">
+        <div class="hero-video-container">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="./assets/new.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">
+                25+ Years of<br>
+                Experience in<br>
+                Green Pool Recovery
+            </h1>
+            <p class="hero-subtitle">
+                Proudly helping Perth homes for over 25+ years. Contact us today for a free consultation.
+            </p>
+            <div class="hero-buttons">
+                <button class="hero-btn hero-btn-primary">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2" />
+                        <rect x="7" y="7" width="4" height="4" fill="currentColor" />
+                        <rect x="13" y="7" width="4" height="4" fill="currentColor" />
+                        <rect x="7" y="13" width="4" height="4" fill="currentColor" />
+                        <rect x="13" y="13" width="4" height="4" fill="currentColor" />
+                    </svg>
+                    Our Portfolio
+                </button>
+                <button class="hero-btn hero-btn-secondary">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Call Today
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before and After Section -->
+
+    <section class="comparison-section">
+        <div class="comparison-wave-top">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C240,20 480,100 720,60 C960,20 1200,100 1440,60 L1440,0 L0,0 Z" fill="#334d6e" />
+            </svg>
+        </div>
+
+        <div class="comparison-container">
+            <h2 class="comparison-heading">
+                Swipe Left for<br>
+                Crystal Clean Water
+            </h2>
+
+            <div class="comparison-grid">
+
+                <!-- First Comparison Slider -->
+                <div class="comparison-item">
+                    <div class="comparison-slider">
+                        <div class="comparison-slider-container">
+                            <img src="./assets/pool2.png" alt="Pool Before" class="comparison-image comparison-before">
+                            <div class="comparison-overlay" style="width: 50%;">
+                                <img src="./assets/pool1.jpg" alt="Pool After"
+                                    class="comparison-image comparison-after">
+                            </div>
+                            <input type="range" min="0" max="100" value="50" class="comparison-range" id="slider1">
+                            <div class="comparison-divider" style="left: 50%;">
+                                <div class="comparison-handle">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comparison-label comparison-label-before">Before</div>
+                        <div class="comparison-label comparison-label-after">After</div>
+                    </div>
+                </div>
+
+                <!-- Second Comparison Slider -->
+                <div class="comparison-item">
+                    <div class="comparison-slider">
+                        <div class="comparison-slider-container">
+                            <img src="./assets/pool3.png" alt="Pool Before" class="comparison-image comparison-before">
+                            <div class="comparison-overlay" style="width: 50%;">
+                                <img src="./assets/pool4.jpg" alt="Pool After"
+                                    class="comparison-image comparison-after">
+                            </div>
+                            <input type="range" min="0" max="100" value="50" class="comparison-range" id="slider2">
+                            <div class="comparison-divider" style="left: 50%;">
+                                <div class="comparison-handle">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comparison-label comparison-label-before">Before</div>
+                        <div class="comparison-label comparison-label-after">After</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comparison-wave-bottom">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C240,100 480,20 720,60 C960,100 1200,20 1440,60 L1440,120 L0,120 Z" fill="#ffffff" />
+            </svg>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <button class="scroll-top-btn">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </section>
+
+
+    <script>
+        // Before/After Comparison Slider Functionality
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Initialize all sliders
+            const sliders = document.querySelectorAll('.comparison-range');
+
+            sliders.forEach((slider, index) => {
+                const container = slider.closest('.comparison-slider-container');
+                const overlay = container.querySelector('.comparison-overlay');
+                const divider = container.querySelector('.comparison-divider');
+
+                // Update slider position
+                function updateSlider(value) {
+                    const percentage = value + '%';
+                    overlay.style.width = percentage;
+                    divider.style.left = percentage;
+                }
+
+                // Handle slider input
+                slider.addEventListener('input', function () {
+                    updateSlider(this.value);
+                });
+
+                // Handle mouse/touch dragging
+                let isDragging = false;
+
+                container.addEventListener('mousedown', function (e) {
+                    isDragging = true;
+                    updatePosition(e.clientX);
+                });
+
+                container.addEventListener('touchstart', function (e) {
+                    isDragging = true;
+                    updatePosition(e.touches[0].clientX);
+                });
+
+                document.addEventListener('mousemove', function (e) {
+                    if (isDragging) {
+                        updatePosition(e.clientX);
+                    }
+                });
+
+                document.addEventListener('touchmove', function (e) {
+                    if (isDragging) {
+                        updatePosition(e.touches[0].clientX);
+                    }
+                });
+
+                document.addEventListener('mouseup', function () {
+                    isDragging = false;
+                });
+
+                document.addEventListener('touchend', function () {
+                    isDragging = false;
+                });
+
+                function updatePosition(clientX) {
+                    const rect = container.getBoundingClientRect();
+                    const x = clientX - rect.left;
+                    const percentage = Math.max(0, Math.min(100, (x / rect.width) * 100));
+                    slider.value = percentage;
+                    updateSlider(percentage);
+                }
+            });
+
+            // Scroll to Top Button
+            const scrollTopBtn = document.querySelector('.scroll-top-btn');
+
+            if (scrollTopBtn) {
+                scrollTopBtn.addEventListener('click', function () {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+
+                // Show/hide scroll button based on scroll position
+                window.addEventListener('scroll', function () {
+                    if (window.pageYOffset > 300) {
+                        scrollTopBtn.style.opacity = '1';
+                        scrollTopBtn.style.pointerEvents = 'auto';
+                    } else {
+                        scrollTopBtn.style.opacity = '0';
+                        scrollTopBtn.style.pointerEvents = 'none';
+                    }
+                });
+
+                // Initialize button visibility
+                if (window.pageYOffset <= 300) {
+                    scrollTopBtn.style.opacity = '0';
+                    scrollTopBtn.style.pointerEvents = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
