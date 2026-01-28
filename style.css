@@ -211,9 +211,10 @@ body {
 /* Before/After Comparison Section */
 .comparison-section {
     position: relative;
-    background: linear-gradient(180deg, #5BA4CF 0%, #4A9BD1 100%);
+    /* background: linear-gradient(180deg, #5BA4CF 0%, #4A9BD1 100%); */
     padding: 100px 0 120px;
     overflow: hidden;
+    background-color: #49b1f2;
 }
 
 .comparison-wave-top {
@@ -222,12 +223,14 @@ body {
     left: 0;
     width: 100%;
     height: 80px;
+    background-color: #32abf6;
 }
 
 .comparison-wave-top svg {
     width: 100%;
     height: 100%;
     display: block;
+    background-color: #49b1f2;
 }
 
 .comparison-wave-bottom {
@@ -302,7 +305,7 @@ body {
 .comparison-overlay {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     height: 100%;
     overflow: hidden;
     z-index: 2;
@@ -412,4 +415,156 @@ body {
 .scroll-top-btn svg {
     width: 24px;
     height: 24px;
+}
+
+/* Service Section */
+
+.services-section {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.services-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #49b1f2;
+    margin-bottom: 60px;
+}
+
+.services-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.service-card {
+    perspective: 1000px;
+    height: 280px;
+}
+
+.service-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.service-card:hover .service-card-inner {
+    transform: rotateY(180deg);
+}
+
+.service-card-front,
+.service-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.service-card-front {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.service-card-front::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.service-title {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.service-card-back {
+    background: linear-gradient(135deg, #49b1f2 0%, #2a9bd8 100%);
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.service-description {
+    color: white;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+    text-align: center;
+}
+
+/* Unique Background Images for Each Service */
+.service-bg-1 {
+    background-image: url('./assets/service1.png');
+}
+
+.service-bg-2 {
+    background-image: url('./assets/service2.png');
+}
+
+.service-bg-3 {
+    background-image: url('./assets/service3.jpeg');
+}
+
+.service-bg-4 {
+    background-image: url('./assets/service4.jpg');
+}
+
+.service-bg-5 {
+    background-image: url('./assets/service5.webp');
+}
+
+.service-bg-6 {
+    background-image: url('./assets/service6.png');
+}
+
+.service-bg-7 {
+    background-image: url('./assets/service7.png');
+}
+
+.service-bg-8 {
+    background-image: url('./assets/service8.jpg');
+}
+
+.services-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 14px 50px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services-btn:hover {
+    background: #2a9bd8;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(73, 177, 242, 0.4);
 }
