@@ -12,45 +12,42 @@
 <body>
 
     <!-- Navbar -->
-
     <nav class="navbar">
         <div class="navbar-container">
-            <div class="logo-icon">
+            <div class="navbar-logo">
                 <img src="./assets/white-logo.png" alt="">
             </div>
 
-            <ul class="navbar-menu">
-                <li class="navbar-item">
-                    <a href="./index.html" class="navbar-link">Home</a>
-                </li>
-                <li class="navbar-item">
-                    <a href="./about.html" class="navbar-link">
-                        About Us
-                    </a>
-                </li>
-                <li class="navbar-item">
-                    <a href="./service.html" class="navbar-link">
-                        Services
-                    </a>
-                </li>
-                <li class="navbar-item">
-                    <a href="./gallery.html" class="navbar-link">
-                        Gallery
-                    </a>
-                </li>
-                <li class="navbar-item">
-                    <a href="./blogs.html" class="navbar-link">
-                        Blogs
-                    </a>
-                </li>
-                <li class="navbar-item">
-                    <a href="#" class="navbar-link active">
-                        Contact Us
-                    </a>
-                </li>
-            </ul>
+            <!-- Hamburger Button -->
+            <button class="navbar-hamburger" id="hamburgerBtn">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
 
-            <button class="navbar-cta">REQUEST A QUOTE</button>
+            <!-- Mobile Overlay -->
+            <div class="navbar-overlay" id="navOverlay"></div>
+
+            <!-- Nav Menu -->
+            <div class="navbar-menu-wrapper" id="navMenuWrapper">
+                <button class="navbar-close" id="navCloseBtn">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" />
+                    </svg>
+                </button>
+
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a href="#home" class="navbar-link active">Home</a></li>
+                    <li class="navbar-item"><a href="#about" class="navbar-link">About Us</a></li>
+                    <li class="navbar-item"><a href="#services" class="navbar-link">Services</a></li>
+                    <li class="navbar-item"><a href="#gallery" class="navbar-link">Gallery</a></li>
+                    <li class="navbar-item"><a href="#blogs" class="navbar-link">Blogs</a></li>
+                    <li class="navbar-item"><a href="#contact" class="navbar-link">Contact Us</a></li>
+                </ul>
+
+                <button class="navbar-cta">REQUEST A QUOTE</button>
+            </div>
         </div>
     </nav>
 
@@ -133,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-               
+
             </div>
 
             <div class="contact-form-side">
@@ -191,6 +188,70 @@
 
                     <button type="submit" class="form-submit-btn">Send Message</button>
                 </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+
+    <section class="service-areas-section">
+        <div class="service-areas-wave-top">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C240,20 480,100 720,60 C960,20 1200,100 1440,60 L1440,0 L0,0 Z" fill="#f5f5f5" />
+            </svg>
+        </div>
+
+        <div class="service-areas-container">
+            <h2 class="service-areas-heading">We Service Across Perth</h2>
+
+            <div class="service-areas-grid">
+                <!-- Column 1 -->
+                <div class="service-areas-column service-areas-column-1">
+                    <ul class="service-areas-list">
+                        <li class="service-area-item">Perth CBD</li>
+                        <li class="service-area-item">North Perth</li>
+                        <li class="service-area-item">Mount Lawley</li>
+                        <li class="service-area-item">Leederville</li>
+                        <li class="service-area-item">Subiaco</li>
+                        <li class="service-area-item">Claremont</li>
+                        <li class="service-area-item">Cottesloe</li>
+                        <li class="service-area-item">Scarborough</li>
+                        <li class="service-area-item">Morley</li>
+                        <li class="service-area-item">Dianella</li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="service-areas-column service-areas-column-2">
+                    <ul class="service-areas-list">
+                        <li class="service-area-item">Balcatta</li>
+                        <li class="service-area-item">Osborne Park</li>
+                        <li class="service-area-item">Stirling</li>
+                        <li class="service-area-item">Nollamara</li>
+                        <li class="service-area-item">Mirrabooka</li>
+                        <li class="service-area-item">Wanneroo</li>
+                        <li class="service-area-item">Greenwood</li>
+                        <li class="service-area-item">Hillarys</li>
+                        <li class="service-area-item">Karrinyup</li>
+                        <li class="service-area-item">Padbury</li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="service-areas-column service-areas-column-3">
+                    <ul class="service-areas-list">
+                        <li class="service-area-item">Victoria Park</li>
+                        <li class="service-area-item">South Perth</li>
+                        <li class="service-area-item">Como</li>
+                        <li class="service-area-item">Applecross</li>
+                        <li class="service-area-item">Willetton</li>
+                        <li class="service-area-item">Canning Vale</li>
+                        <li class="service-area-item">Thornlie</li>
+                        <li class="service-area-item">Harrisdale</li>
+                        <li class="service-area-item">Piara Waters</li>
+                        <li class="service-area-item">Cockburn</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -272,6 +333,9 @@
             <p>All Rights Reserved</p>
         </div>
     </footer>
+
+
+    <script src="./script.js"></script>
 
 </body>
 

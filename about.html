@@ -12,46 +12,43 @@
 <body>
 
     <!-- Navbar -->
+     
     <nav class="navbar">
         <div class="navbar-container">
-            <div class="logo-icon">
+            <div class="navbar-logo">
                 <img src="./assets/white-logo.png" alt="">
             </div>
 
-            <ul class="navbar-menu">
-                <li class="navbar-item">
-                    <a href="./index.html" class="navbar-link">
-                        Home
-                    </a>
-                </li>
-                <li class="navbar-item">
-                    <a href="./about.html" class="navbar-link active">
-                        About Us
-                    </a>
-                </li>
-                <li class="navbar-item">
-                    <a href="./service.html" class="navbar-link">
-                        Services
-                    </a>
-                </li>
-                <li class="navbar-item">
-                    <a href="./gallery.html" class="navbar-link">
-                        Gallery
-                    </a>
-                </li>
-                <li class="navbar-item">
-                    <a href="./blogs.html" class="navbar-link">
-                        Blogs
-                    </a>
-                </li>
-                <li class="navbar-item">
-                    <a href="./contact.html" class="navbar-link">
-                        Contact Us
-                    </a>
-                </li>
-            </ul>
+            <!-- Hamburger Button -->
+            <button class="navbar-hamburger" id="hamburgerBtn">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
 
-            <button class="navbar-cta">REQUEST A QUOTE</button>
+            <!-- Mobile Overlay -->
+            <div class="navbar-overlay" id="navOverlay"></div>
+
+            <!-- Nav Menu -->
+            <div class="navbar-menu-wrapper" id="navMenuWrapper">
+                <button class="navbar-close" id="navCloseBtn">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" />
+                    </svg>
+                </button>
+
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a href="#home" class="navbar-link active">Home</a></li>
+                    <li class="navbar-item"><a href="#about" class="navbar-link">About Us</a></li>
+                    <li class="navbar-item"><a href="#services" class="navbar-link">Services</a></li>
+                    <li class="navbar-item"><a href="#gallery" class="navbar-link">Gallery</a></li>
+                    <li class="navbar-item"><a href="#blogs" class="navbar-link">Blogs</a></li>
+                    <li class="navbar-item"><a href="#contact" class="navbar-link">Contact Us</a></li>
+                </ul>
+
+                <button class="navbar-cta">REQUEST A QUOTE</button>
+            </div>
         </div>
     </nav>
 
@@ -228,6 +225,9 @@
             <p>All Rights Reserved</p>
         </div>
     </footer>
+
+
+    <script src="./script.js"></script>
 
 </body>
 

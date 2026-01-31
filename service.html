@@ -12,45 +12,42 @@
 <body>
 
     <!-- Navbar -->
-
     <nav class="navbar">
         <div class="navbar-container">
-            <div class="logo-icon">
+            <div class="navbar-logo">
                 <img src="./assets/white-logo.png" alt="">
             </div>
 
-            <ul class="navbar-menu">
-                <li class="navbar-item">
-                    <a href="./index.html" class="navbar-link">Home</a>
-                </li>
-                <li class="navbar-item">
-                    <a href="./about.html" class="navbar-link">
-                        About Us
-                    </a>
-                </li>
-                <li class="navbar-item">
-                    <a href="./service.html" class="navbar-link active">
-                        Services
-                    </a>
-                </li>
-                <li class="navbar-item">
-                    <a href="./gallery.html" class="navbar-link">
-                        Gallery
-                    </a>
-                </li>
-                <li class="navbar-item">
-                    <a href="./blogs.html" class="navbar-link">
-                        Blogs
-                    </a>
-                </li>
-                <li class="navbar-item">
-                    <a href="./contact.html" class="navbar-link">
-                        Contact Us
-                    </a>
-                </li>
-            </ul>
+            <!-- Hamburger Button -->
+            <button class="navbar-hamburger" id="hamburgerBtn">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
 
-            <button class="navbar-cta">REQUEST A QUOTE</button>
+            <!-- Mobile Overlay -->
+            <div class="navbar-overlay" id="navOverlay"></div>
+
+            <!-- Nav Menu -->
+            <div class="navbar-menu-wrapper" id="navMenuWrapper">
+                <button class="navbar-close" id="navCloseBtn">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" />
+                    </svg>
+                </button>
+
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a href="#home" class="navbar-link active">Home</a></li>
+                    <li class="navbar-item"><a href="#about" class="navbar-link">About Us</a></li>
+                    <li class="navbar-item"><a href="#services" class="navbar-link">Services</a></li>
+                    <li class="navbar-item"><a href="#gallery" class="navbar-link">Gallery</a></li>
+                    <li class="navbar-item"><a href="#blogs" class="navbar-link">Blogs</a></li>
+                    <li class="navbar-item"><a href="#contact" class="navbar-link">Contact Us</a></li>
+                </ul>
+
+                <button class="navbar-cta">REQUEST A QUOTE</button>
+            </div>
         </div>
     </nav>
 
@@ -84,7 +81,8 @@
                 </div>
                 <h3 class="service-box-title">Pool Equipment Supply</h3>
                 <p class="service-box-text">
-                    We supply and replace major brand pumps, filters, and chlorination systems with high standard installation. Our solutions ensure efficient, reliable performance for long-term pool operation.
+                    We supply and replace major brand pumps, filters, and chlorination systems with high standard
+                    installation. Our solutions ensure efficient, reliable performance for long-term pool operation.
                 </p>
                 <button class="service-box-btn">Call Now</button>
             </div>
@@ -98,7 +96,9 @@
                     Electric Pool Heat Pumps
                 </h3>
                 <p class="service-box-text">
-                    Our energy-efficient heating solutions deliver year-round pool comfort, tailored to Perth’s climate, ensuring consistent, reliable performance while keeping operating costs low and energy usage minimal.
+                    Our energy-efficient heating solutions deliver year-round pool comfort, tailored to Perth’s climate,
+                    ensuring consistent, reliable performance while keeping operating costs low and energy usage
+                    minimal.
                 </p>
                 <button class="service-box-btn">Call Now</button>
             </div>
@@ -112,7 +112,8 @@
                     Pool Equipment Relocation
                 </h3>
                 <p class="service-box-text">
-                   We provide professional pool equipment relocation with safe disconnection and careful repositioning, ideal for renovations or improved aesthetics, ensuring precise reinstallation.
+                    We provide professional pool equipment relocation with safe disconnection and careful repositioning,
+                    ideal for renovations or improved aesthetics, ensuring precise reinstallation.
                 </p>
                 <button class="service-box-btn">Call Now</button>
             </div>
@@ -126,7 +127,8 @@
                     Pool Covers & Roller Systems
                 </h3>
                 <p class="service-box-text">
-                    We supply premium pool covers and roller systems that reduce evaporation, retain heat, lower maintenance costs, and protect your pool investment, designed for WA conditions.
+                    We supply premium pool covers and roller systems that reduce evaporation, retain heat, lower
+                    maintenance costs, and protect your pool investment, designed for WA conditions.
                 </p>
                 <button class="service-box-btn">Call Now</button>
             </div>
@@ -140,7 +142,9 @@
                     Pool Troubleshooting & Leak Detection
                 </h3>
                 <p class="service-box-text">
-                   We offer expert pool troubleshooting, accurate leak detection, and systematic problem identification, delivering efficient solutions that save time and costs while ensuring long-term reliability.
+                    We offer expert pool troubleshooting, accurate leak detection, and systematic problem
+                    identification, delivering efficient solutions that save time and costs while ensuring long-term
+                    reliability.
                 </p>
                 <button class="service-box-btn">Call Now</button>
             </div>
@@ -154,7 +158,9 @@
                     Pool Light Conversions to LED
                 </h3>
                 <p class="service-box-text">
-                    Our modern LED lighting upgrades deliver enhanced brightness and improved safety while using less power. The result is an energy-efficient solution with a clean, elegant finish that elevates the overall look.
+                    Our modern LED lighting upgrades deliver enhanced brightness and improved safety while using less
+                    power. The result is an energy-efficient solution with a clean, elegant finish that elevates the
+                    overall look.
                 </p>
                 <button class="service-box-btn">Call Now</button>
             </div>
@@ -168,7 +174,9 @@
                     Green Pool Treatment Specialists
                 </h3>
                 <p class="service-box-text">
-                   We restore green and neglected pools using professional-grade treatments to rebalance water, eliminate algae, and deliver fast, effective results with crystal-clear water you can see immediately
+                    We restore green and neglected pools using professional-grade treatments to rebalance water,
+                    eliminate algae, and deliver fast, effective results with crystal-clear water you can see
+                    immediately
                 </p>
                 <button class="service-box-btn">Call Now</button>
             </div>
@@ -182,7 +190,9 @@
                     Pool Equipment Inspections
                 </h3>
                 <p class="service-box-text">
-                    We perform a detailed pool inspection to identify potential repair costs early and ensure compliance with required standards. This gives you complete peace of mind before purchase by clearly assessing the pool’s condition.
+                    We perform a detailed pool inspection to identify potential repair costs early and ensure compliance
+                    with required standards. This gives you complete peace of mind before purchase by clearly assessing
+                    the pool’s condition.
                 </p>
                 <button class="service-box-btn">Call Now</button>
             </div>
@@ -196,7 +206,8 @@
                     Professional Pool Cleaning Services
                 </h3>
                 <p class="service-box-text">
-                    Professional Pool Cleaning Services ensure clean, safe, and hygienic pools through regular cleaning, water treatment, and expert maintenance for long lasting performance.
+                    Professional Pool Cleaning Services ensure clean, safe, and hygienic pools through regular cleaning,
+                    water treatment, and expert maintenance for long lasting performance.
                 </p>
                 <button class="service-box-btn">Call Now</button>
             </div>
@@ -282,6 +293,7 @@
         </div>
     </footer>
 
+    <script src="./script.js"></script>
 </body>
 
 </html>
