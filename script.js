@@ -172,3 +172,32 @@ setInterval(function () {
         animateTexts[currentIndex].classList.add('active');
     }, 600);
 }, 3000);
+
+
+// Gallery open image section part
+
+// Gallery Lightbox
+const galleryItems = document.querySelectorAll('.gallery-item');
+const lightbox = document.getElementById('lightbox');
+const lightboxImage = document.getElementById('lightboxImage');
+const lightboxClose = document.getElementById('lightboxClose');
+
+galleryItems.forEach(function (item) {
+    item.style.cursor = 'pointer';
+    item.addEventListener('click', function () {
+        const bg = getComputedStyle(item).backgroundImage;
+        const url = bg.replace(/url\(["']?/, '').replace(/["']?\)/, '');
+        lightboxImage.src = url;
+        lightbox.classList.add('active');
+    });
+});
+
+lightboxClose.addEventListener('click', function () {
+    lightbox.classList.remove('active');
+});
+
+lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) {
+        lightbox.classList.remove('active');
+    }
+});
