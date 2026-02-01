@@ -3,9 +3,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
-*::-webkit-scrollbar{
+
+*::-webkit-scrollbar {
     display: none;
 }
+
 :root {
     --primary-color: #0181f5;
 }
@@ -115,6 +117,35 @@ body {
     display: flex;
     align-items: center;
     overflow: hidden;
+}
+
+.hero-title-animate {
+    position: relative;
+    height: 1.1em;
+    overflow: hidden;
+    display: inline-block;
+    min-width: 50rem;
+}
+
+.hero-animate-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.6s ease;
+    white-space: nowrap;
+    color: white;
+}
+
+.hero-animate-text.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero-animate-text.exit {
+    opacity: 0;
+    transform: translateY(-100%);
 }
 
 .hero-video-container {
@@ -530,11 +561,11 @@ body {
 }
 
 .service-bg-3 {
-    background-image: url('./assets/service3.jpeg');
+    background-image: url('./assets/service3.avif');
 }
 
 .service-bg-4 {
-    background-image: url('./assets/service4.jpg');
+    background-image: url('./assets/service4.jpeg');
 }
 
 .service-bg-5 {
@@ -546,11 +577,11 @@ body {
 }
 
 .service-bg-7 {
-    background-image: url('./assets/service7.png');
+    background-image: url('./assets/service7.jpeg');
 }
 
 .service-bg-8 {
-    background-image: url('./assets/service8.jpg');
+    background-image: url('./assets/service8.jpeg');
 }
 
 .services-btn {
@@ -1870,6 +1901,17 @@ body {
     .testimonial-card {
         min-width: calc((100% - 30px) / 2);
     }
+
+    /* Gallery Grid */
+
+    .gallery-grid {
+        grid-template-columns: auto auto auto;
+    }
+
+    /*  COntact  */
+    .contact-form-container {
+        grid-template-columns: auto;
+    }
 }
 
 /* Small Tablet - 900px */
@@ -1981,6 +2023,41 @@ body {
         width: 40px;
         height: 40px;
     }
+
+    /* About Us Section */
+    .other-hero-title {
+        font-size: 48px;
+    }
+
+    .other-hero-desc {
+        font-size: 15px;
+    }
+
+    .about-hero-content {
+        margin-left: 0;
+    }
+
+    .why-choose-heading {
+        font-size: 48px;
+    }
+
+    .why-choose-grid {
+        grid-template-columns: auto auto;
+    }
+
+    /* Services Page */
+    .service-hero-content {
+        margin-left: 0;
+    }
+
+    .services-grid-container {
+        grid-template-columns: auto auto;
+    }
+
+    /* Gallery grid */
+    .gallery-grid {
+        grid-template-columns: auto auto;
+    }
 }
 
 /* Mobile - 600px */
@@ -2063,6 +2140,38 @@ body {
 
     .testimonials-dots {
         margin-top: 20px;
+    }
+
+    /* * About Us Section */
+    .other-hero-title {
+        font-size: 36px;
+    }
+
+    .other-hero-desc {
+        font-size: 15px;
+    }
+
+    .about-hero-content {
+        margin-left: 0;
+    }
+
+    .why-choose-heading {
+        font-size: 32px;
+    }
+
+    .why-choose-grid {
+        grid-template-columns: auto;
+    }
+
+    /* Services pgae */
+
+    .services-grid-container {
+        grid-template-columns: auto;
+    }
+
+    /* Gallery grid */
+    .gallery-grid {
+        grid-template-columns: auto;
     }
 }
 

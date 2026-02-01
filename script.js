@@ -156,3 +156,19 @@ navOverlay.addEventListener('click', function () {
     navMenuWrapper.classList.remove('active');
     navOverlay.classList.remove('active');
 });
+
+
+// Hero Animated Text
+const animateTexts = document.querySelectorAll('.hero-animate-text');
+let currentIndex = 0;
+
+setInterval(function () {
+    animateTexts[currentIndex].classList.remove('active');
+    animateTexts[currentIndex].classList.add('exit');
+
+    setTimeout(function () {
+        animateTexts[currentIndex].classList.remove('exit');
+        currentIndex = (currentIndex + 1) % animateTexts.length;
+        animateTexts[currentIndex].classList.add('active');
+    }, 600);
+}, 3000);
