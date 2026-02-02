@@ -832,6 +832,10 @@ body {
 .testimonials-wrapper {
     flex: 1;
     overflow: hidden;
+    flex: 1;
+    overflow: hidden;
+    touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
 }
 
 .testimonials-track {

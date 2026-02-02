@@ -201,3 +201,36 @@ lightbox.addEventListener('click', function (e) {
         lightbox.classList.remove('active');
     }
 });
+
+
+// Touch swipe for testimonials
+const testimonialsWrapper = document.querySelector('.testimonials-wrapper');
+const testimonialsTrack = document.querySelector('.testimonials-track');
+let startX = 0;
+let currentX = 0;
+let isDragging = false;
+
+testimonialsWrapper.addEventListener('touchstart', function(e) {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+});
+
+testimonialsWrapper.addEventListener('touchmove', function(e) {
+    if (!isDragging) return;
+    currentX = e.touches[0].clientX;
+});
+
+testimonialsWrapper.addEventListener('touchend', function() {
+    if (!isDragging) return;
+    const diff = startX - currentX;
+    
+    if (diff > 50) {
+        // Swipe left - next
+        document.querySelector('.testimonial-next').click();
+    } else if (diff < -50) {
+        // Swipe right - prev
+        document.querySelector('.testimonial-prev').click();
+    }
+    
+    isDragging = false;
+});
