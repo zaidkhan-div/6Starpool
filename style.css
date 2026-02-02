@@ -831,17 +831,14 @@ body {
 
 .testimonials-wrapper {
     flex: 1;
-    overflow: hidden;
-    flex: 1;
-    overflow: hidden;
-    touch-action: pan-y;
-    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
 }
 
 .testimonials-track {
     display: flex;
     transition: transform 0.5s ease;
     gap: 30px;
+    will-change: transform;
 }
 
 .testimonial-card {
