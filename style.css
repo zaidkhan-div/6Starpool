@@ -831,7 +831,7 @@ body {
 
 .testimonials-wrapper {
     flex: 1;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 
 .testimonials-track {
@@ -2304,6 +2304,10 @@ body {
 
     .rating-text {
         font-size: 14px;
+    }
+
+    .testimonials-wrapper {
+        overflow-x: scroll;
     }
 
     .testimonial-card {
